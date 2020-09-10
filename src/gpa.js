@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import './calories.css';
+import './root.css';
 import useForm from './hooks/useForm';
 
 function GPA(){

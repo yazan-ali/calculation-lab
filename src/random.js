@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import useForm from './hooks/useForm';
-import './calories.css';
+import './root.css';
 
 function Random(){
   const [lower, setLower] = useForm("");

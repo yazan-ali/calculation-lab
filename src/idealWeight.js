@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import useForm from './hooks/useForm';
-import './calories.css';
+import './root.css';
 
 function IdealWeightCalculator(){
   const [age, setAge] = useForm("");
