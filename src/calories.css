@@ -1,0 +1,136 @@
+body{
+}
+
+.root{
+    margin: 10px 15px;
+    font-family:Roboto;
+    font-size: 25px;
+} 
+
+.navbar{
+    background:#5A096A;
+    }
+    .navbar-brand{
+    color:white;			
+    }
+    .nav-link{
+    color:white;		
+    }
+    .nav-link:hover{
+    color:white;
+    background:#8E2E80;	
+    border-radius:10px;	
+    }
+    .navbar-brand:hover{
+    color:white;			
+    }
+    .nav-link:hover{
+    color:white;		
+    }
+    #mainNav .nav-link{
+    color:white;		
+    }
+
+.button{
+    margin-left: 9.5rem;
+    color:white;
+    background-color: #5A096A;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    font-size: 15px;
+}
+.button:focus{
+    outline: none;
+}
+
+.result{
+    margin-left: auto;
+    width: auto;
+}
+
+.avrH1{
+    color: white;
+    background-color: #5A096A;
+    padding: 7px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reset:hover{
+    cursor: pointer;
+}
+
+.averageComp{
+    width: 500px;
+    border: 1px rgba(0,0,0,0.2) solid; 
+}
+
+.averageComp input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #f7f7f7;
+}
+
+.avrValue{
+    margin-left: 1rem;
+    color: rgba(0,0,0,0.50);
+}
+
+.avrResult{
+    margin-left: 1rem;
+}
+
+.gpaBtn{
+    margin-left: auto;
+    color:white;
+    background-color: #5A096A;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    font-size: 15px;
+}
+
+.gpaHeader{
+    margin-left: 1rem;
+}
+
+@media (min-width: 1200px) {
+    .root{
+        margin: 50px 100px;
+    } 
+    .jumbotron{
+        width: 70%;
+    }
+    .gpaForm{
+        margin-left: 17%;
+    }
+    .result{
+        margin-left: 16.5%;
+        width: 428px;
+    }
+    .gpaBtn{
+        margin-left: 17rem;
+        color:white;
+        background-color: #5A096A;
+        padding: 8px;
+        border-radius: 4px;
+        border: none;
+        font-size: 15px;
+    }
+    .gpaHeader{
+        margin-left: 10rem;
+    }
+}
+
+.error{
+    color:#CF302B;
+}
+
+
+
+
+
