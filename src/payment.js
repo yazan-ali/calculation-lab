@@ -56,10 +56,10 @@ function PaymentCalculator(){
             </div>
            </div>
           
-           <button className="button mb-3">Calculat</button>
+           <button className="button2 mb-3">Calculat</button>
            </form>
            { result > 0 && (
-           <div className="result">
+           <div className="result2">
            <ul className="list-group ml-2">
              <li className="list-group-item"> <strong> <span>Monthly Payment:</span> </strong> {result.toPrecision(6)} </li>
              <li className="list-group-item"> <strong> <span>Time Required to Clear Debt: </span></strong>  {LoanTerm /12 } years</li>

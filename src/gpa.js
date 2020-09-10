@@ -224,15 +224,15 @@ function GPA(){
                 <button className="col-3 gpaBtn" type="submit">Calculate</button>
               </form>
               { result1 > 0 && format === "letter" && ( 
-              <div className="result">
-              <ul className="list-group ml-2">
+              <div className="result mt-3">
+              <ul className="list-group ml-md-5">
               <li className="list-group-item"> <strong>GPA = {result1.toPrecision(3)} </strong> </li>
               </ul>	
               </div>
               )}
               { result2 > 0 &&  format === "percentage" && ( 
-              <div className="result">
-              <ul className="list-group ml-2">
+              <div className="result mt-5">
+              <ul className="list-group ml-md-5">
               <li className="list-group-item"> <strong>GPA = {result2.toPrecision(3)} </strong> </li>
               </ul>	
               </div>

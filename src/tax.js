@@ -58,10 +58,10 @@ function TaxCalculator(){
             </div>
            </div>
           
-           <button className="button mb-3">Calculat</button>
+           <button className="button2 mb-3">Calculat</button>
            </form>
            { result.length > 0 && (
-           <div className="result">
+           <div className="result2">
            <ul class="list-group ">
              <li class="list-group-item"><strong> Before Tax Price: </strong> $<span> {result[0]} </span></li>
              <li class="list-group-item"><strong> Sale Tax:</strong> <span> {result[1]} </span>% or $<span> {result[2]} </span>  </li>

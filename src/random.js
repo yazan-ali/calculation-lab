@@ -44,10 +44,10 @@ function Random(){
             </div>
            </div>
 
-           <button className="button mb-3">Generate</button>
+           <button className="button2 mb-3">Generate</button>
            </form>
            { result > 0 && ( 
-           <div className="result">
+           <div className="result2">
            <ul className="list-group ml-2">
              <li className="list-group-item"> <span> <strong>Result: </strong> </span> {result}</li>
            </ul>	
