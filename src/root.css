@@ -74,7 +74,7 @@ body{
 }
 
 .averageComp{
-    width: 500px;
+    width: auto;
     border: 1px rgba(0,0,0,0.2) solid; 
 }
 
@@ -126,6 +126,10 @@ body{
     .result2{
         margin-left: 25.2%;
         width: 428px;
+    }
+    .averageComp{
+        width: 50%;
+        border: 1px rgba(0,0,0,0.2) solid; 
     }
     .button{
         margin-left: 9.5rem;
