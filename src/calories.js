@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import useForm from './hooks/useForm';
-import './root.css';
+import './main.css';
 
 function CaloriesCalculator(){
   const [age, setAge] = useForm(""); 

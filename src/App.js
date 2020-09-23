@@ -1,4 +1,5 @@
 import React from 'react';
+import "./App.css"
 import CaloriesCalculator from './calories';
 import BmiCalculator from './bmi';
 import { Route, Switch} from 'react-router-dom';
@@ -10,12 +11,14 @@ import AverageCalculator from './average';
 import GPA from './gpa';
 import Random from './random';
 import Navbar from './navbar';
+import LandingPage from './landingPage';
 function App() {
   return (
+    <>
+    <Route exact path="/" component={LandingPage} />
     <div className="App">
       <Navbar />
       <Switch>
-      <Route exact path="/" component={CaloriesCalculator} />
       <Route exact path="/calories" component={CaloriesCalculator} />
       <Route exact path="/bmi" component={BmiCalculator} />
       <Route exact path="/ideal-weight" component={IdealWeightCalculator} />
@@ -27,6 +30,7 @@ function App() {
       <Route exact path="/gpa" component={GPA} />
       </Switch>
     </div>
+    </>
   );
 }
 

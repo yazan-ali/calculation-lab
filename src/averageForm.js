@@ -1,6 +1,6 @@
 import React from 'react';
 import useForm from './hooks/useForm';
-import './root.css';
+import './main.css';
 
 function AverageForm({handleAddValue, clear}){
    const [value, setValue, resetValue] = useForm();

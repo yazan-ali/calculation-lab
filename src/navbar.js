@@ -1,11 +1,11 @@
 import React from 'react';
-import './root.css'
+import './main.css';
 import { Link } from 'react-router-dom';
 
 function Navbar(){
     return(
         <nav id="mainNav" className="navbar navbar-expand-lg navbar-dark">
-  <a className="navbar-brand" href="/calories"><i className="fas fa-calculator"></i> Calculation Lab</a>
+  <a className="navbar-brand" href="/"><i className="fas fa-calculator"></i> Calculation Lab</a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>
