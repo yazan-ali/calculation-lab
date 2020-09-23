@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import AverageForm from './averageForm';
+import Navbar from './navbar';
 
 function AverageCalculator(){
     const InitValue = [90,95,80];
@@ -19,6 +20,8 @@ function AverageCalculator(){
     result = result + val
     ));
     return(
+      <>
+      <Navbar />
       <div className="root">
       <h1 className="mb-4">Average Calculator</h1>
       <div className="averageComp">
@@ -33,6 +36,7 @@ function AverageCalculator(){
           }
       </div>
       </div>
+      </>
     );
 };
 

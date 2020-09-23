@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import useForm from './hooks/useForm';
 import './main.css';
+import Navbar from './navbar';
 
 function PaymentCalculator(){
   const [loanAmount, setLoanAmount] = useForm("");
@@ -28,6 +29,8 @@ function PaymentCalculator(){
     setResult(pmt)
 }
     return(
+      <>
+      <Navbar />
        <div className="root">
          <h1 className="mb-4">Payment Calculator</h1>
         <div className="jumbotron">
@@ -70,6 +73,7 @@ function PaymentCalculator(){
            )}
         </div>
         </div>
+        </>
     );
 };
 

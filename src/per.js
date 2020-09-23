@@ -1,5 +1,6 @@
 import React from 'react';
 import './main.css';
+import Navbar from './navbar';
 import useForm from './hooks/useForm';
 import { useState } from 'react';
 
@@ -24,6 +25,8 @@ function PercentageCalculator(){
     }
 
     return(
+      <>
+      <Navbar />
         <div className="root">
         <h1 className="mb-4">Percentage Calculator</h1>
         <div className="jumbotron">
@@ -78,10 +81,8 @@ function PercentageCalculator(){
            </div>
            )}
         </div>
-
-
-
         </div>
+        </>
     );
 };
 

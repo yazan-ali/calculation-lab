@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import './main.css';
+import Navbar from './navbar';
 import useForm from './hooks/useForm';
 
 function GPA(){
@@ -166,6 +167,8 @@ function GPA(){
 
     let i=[1,2,3,5,4,8,5,84,84,848,484,8484,5,8548,484];
     return(
+      <>
+      <Navbar />
         <div className="root">
             <div className="jumbotron">
             <form onSubmit={getResult}>
@@ -239,6 +242,7 @@ function GPA(){
               )}
             </div>
         </div>
+        </>
     );
 }
 

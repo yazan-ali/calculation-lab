@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import useForm from './hooks/useForm';
 import './main.css';
+import Navbar from './navbar';
 
 function Random(){
   const [lower, setLower] = useForm("");
@@ -24,6 +25,8 @@ function Random(){
     setResult(random)
 }
     return(
+      <>
+      <Navbar />
        <div className="root">
          <h1 className="mb-4">Random Number Generator</h1>
         <div className="jumbotron">
@@ -55,6 +58,7 @@ function Random(){
            )}
         </div>
         </div>
+        </>
     );
 };
 

@@ -10,15 +10,12 @@ import PercentageCalculator from './per';
 import AverageCalculator from './average';
 import GPA from './gpa';
 import Random from './random';
-import Navbar from './navbar';
 import LandingPage from './landingPage';
 function App() {
   return (
     <div className="App">
-    <Route exact path="/" component={LandingPage} />
-    <>
-      <Navbar />
       <Switch>
+      <Route exact path="/" component={LandingPage} />
       <Route exact path="/calories" component={CaloriesCalculator} />
       <Route exact path="/bmi" component={BmiCalculator} />
       <Route exact path="/ideal-weight" component={IdealWeightCalculator} />
@@ -29,7 +26,6 @@ function App() {
       <Route exact path="/random" component={Random} />
       <Route exact path="/gpa" component={GPA} />
       </Switch>
-    </>
     </div>
   );
 }

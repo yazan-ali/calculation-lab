@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import useForm from './hooks/useForm';
 import './main.css';
+import Navbar from './navbar';
 
 function TaxCalculator(){
   const [before, setBefore] = useForm(0);
@@ -30,6 +31,8 @@ function TaxCalculator(){
         }
 }
     return(
+      <>
+      <Navbar />
        <div className="root">
          <h1 className="mb-4">Sales Tax Calculator</h1>
         <div className="jumbotron">
@@ -71,6 +74,7 @@ function TaxCalculator(){
            )}
         </div>
         </div>
+        </>
     );
 };
 

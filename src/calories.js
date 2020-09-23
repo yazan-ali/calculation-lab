@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import useForm from './hooks/useForm';
 import './main.css';
+import Navbar from './navbar';
 
 function CaloriesCalculator(){
   const [age, setAge] = useForm(""); 
@@ -40,23 +41,12 @@ function CaloriesCalculator(){
   setResult(bmr)
 }
     return(
+      <>
+      <Navbar />
        <div className="root">
          <h1 className="mb-4">Calorie Calculator</h1>
         <div className="jumbotron">
         <form onSubmit={getResult}>
-        {/* <div className="form-group row">
-              <label htmlFor="units" className="col-sm-2 col-form-label">Units</label>
-              <div className="ml-3" id="units">
-            <div className="form-check form-check-inline">
-              <input className="form-check-input" type="radio" name="units" id="inlineRadio1" value="metric units" onChange={setUnits} />
-              <label className="form-check-label" htmlFor="inlineRadio1">Metric Units</label>
-            </div>
-            <div className="form-check form-check-inline">
-             <input className="form-check-input" type="radio" name="units" id="inlineRadio2" value="us units" onChange={setUnits} />
-             <label className="form-check-label" htmlFor="inlineRadio2">US Units</label>
-            </div>
-            </div>
-          </div> */}
 
             <div className="form-group row">
               <label htmlFor="input1" className="col-sm-2 col-form-label">Age</label>
@@ -111,13 +101,6 @@ function CaloriesCalculator(){
            </select>
            </div>
            </div>
-           {/* <div>
-           <ul >
-	           <li><strong>Exercise:</strong> 15-30 minutes of elevated heart rate activity.</li>
-           	<li><strong>Intense exercise:</strong> 45-120 minutes of elevated heart rate activity.</li>
-	           <li><strong>Very intense exercise:</strong> 2+ hours of elevated heart rate activity.</li>
-           </ul>
-           </div> */}
            <button className="button mb-3">Calculat</button>
            </form>
            {
@@ -133,6 +116,7 @@ function CaloriesCalculator(){
              )}
         </div>
         </div>
+        </>
     );
 };
 
