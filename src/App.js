@@ -14,9 +14,9 @@ import Navbar from './navbar';
 import LandingPage from './landingPage';
 function App() {
   return (
-    <>
-    <Route exact path="/" component={LandingPage} />
     <div className="App">
+    <Route exact path="/" component={LandingPage} />
+    <>
       <Navbar />
       <Switch>
       <Route exact path="/calories" component={CaloriesCalculator} />
@@ -29,8 +29,8 @@ function App() {
       <Route exact path="/random" component={Random} />
       <Route exact path="/gpa" component={GPA} />
       </Switch>
-    </div>
     </>
+    </div>
   );
 }
 
