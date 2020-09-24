@@ -5,9 +5,9 @@ function LandingPage(){
         return(
             <div className="main">
                 <div>
-                    <h3> <i className="fas fa-calculator"></i> Calculation Lab</h3>
+                    <h3 className="row"> <i className="fas fa-calculator"></i> Calculation Lab</h3>
                 </div>
-                <div className="row Row">
+                <div className="row">
                 <div className="col-md-6 fitness">
                 <h1>Fitness & Health</h1>
                 <div className="menu">
@@ -38,7 +38,7 @@ function LandingPage(){
                 </div>
              </div>
                 </div>
-                <div className="row Row">
+                <div className="row">
                 <div className="col-md-12 math">
                 <h1>Math Calculators</h1>
                 <div className="menu">

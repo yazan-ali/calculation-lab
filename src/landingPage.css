@@ -4,10 +4,6 @@
     color: white;
 }
 
-.Row{
-    width: 100vw;
-}
-
 .main h1{
     text-shadow: rgb(0,0,0,0.7) 2px 2px;
 }
@@ -16,6 +12,8 @@
     background-color: #5A096A;
     padding: 20px;
     margin-bottom: 0;
+    display: flex;
+    justify-content: center;
 }
 
 .menu{
@@ -39,46 +37,54 @@
 }
 
 .fitness{
-    filter: grayscale(50%);
     height: 50vh;
     background-image: url(https://images.unsplash.com/photo-1494597564530-871f2b93ac55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1001&q=80);
     background-position: center;
     background-size: cover;
-    overflow: hidden;
 }
 .fitness:hover{
-    filter: grayscale(0);
+    filter: grayscale(50%);
+}
+
+.fitness:hover  li{
+    background:  #5A096A;
+    opacity: 1;
 }
 
 .financial{
-    filter: grayscale(50%);
     height: 50vh;
-    background-image: url(https://images.unsplash.com/photo-1592500624107-930fa27190ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    background-image: url(https://images.pexels.com/photos/4386373/pexels-photo-4386373.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
     background-position: center;
     background-size: cover;
-    overflow: hidden;
 }
 
 .financial:hover{
-    filter: grayscale(0);
+    filter: grayscale(50%);
+}
+
+.financial:hover  li{
+    background:  #5A096A;
+    opacity: 1;
 }
 
 .math{
-    filter: grayscale(50%);
     height: 80vh;
     background-image: url(https://images.unsplash.com/photo-1582572186057-0e74d3c715ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1782&q=80);
     background-position: center;
     background-size: cover;
-    overflow: hidden;
 }
 
 .math:hover{
-    filter: grayscale(0);
+    filter: grayscale(50%);
+}
+
+.math:hover  li{
+    background:  #5A096A;
+    opacity: 1;
 }
 
 .p{
     text-shadow: rgb(0,0,0,0.7) 2px 2px;
-    /* color: black; */
     position: relative;
     top: 320px;
     font-size: 25px;
