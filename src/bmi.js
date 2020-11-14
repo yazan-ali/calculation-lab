@@ -4,66 +4,66 @@ import useForm from './hooks/useForm';
 import './main.css';
 import Navbar from './navbar';
 
-function BmiCalculator(){
+function BmiCalculator() {
   const [age, setAge] = useForm("");
   // const [units, setUnits] = useForm("metric units");  
-  const [height, setHeight] = useForm(""); 
+  const [height, setHeight] = useForm("");
   const [weight, setWeight] = useForm("");
-  let bmi; 
+  let bmi;
 
   const [result, setResult] = useState(0);
 
-  function getResult(e){
+  function getResult(e) {
     e.preventDefault()
-    bmi = weight / (height/100 * height/100);
+    bmi = weight / (height / 100 * height / 100);
     setResult(bmi)
-}
-    return(
-      <>
+  }
+  return (
+    <>
       <Navbar />
-       <div className="root">
-         <h1 className="mb-4">BMI Calculator</h1>
+      <div className="root">
+        <h1 className="mb-4">BMI Calculator</h1>
         <div className="jumbotron">
-        <form onSubmit={getResult}>
-       
+          <form onSubmit={getResult}>
+
             <div className="form-group row">
               <label htmlFor="input1" className="col-sm-2 col-form-label">Age</label>
               <div className="col-sm-6">
-              <input type="text" className="form-control" name="age" value={age} onChange={setAge} id="input1"/>
-              { (age < 0 || isNaN(age)) && <p className="error" >Please enter a positive value</p> }
+                <input type="text" className="form-control" name="age" value={age} onChange={setAge} id="input1" />
+                {(age < 0 || isNaN(age)) && <p className="error" >Please enter a positive value</p>}
               </div>
             </div>
 
             <div className="form-group row">
-             <label htmlFor="input3" className="col-sm-2 col-form-label">Height</label>
-             <div className="col-sm-6">
-             <input type="text" className="form-control" name="height" value={height} onChange={setHeight} placeholder="cm" id="input3"/>
-             { (height < 0 || isNaN(height)) && <p className="error" >Please enter a positive value</p> }
+              <label htmlFor="input3" className="col-sm-2 col-form-label">Height</label>
+              <div className="col-sm-6">
+                <input type="text" className="form-control" name="height" value={height} onChange={setHeight} placeholder="cm" id="input3" />
+                {(height < 0 || isNaN(height)) && <p className="error" >Please enter a positive value</p>}
+              </div>
             </div>
-           </div>
 
-           <div className="form-group row">
-             <label htmlFor="input4" className="col-sm-2 col-form-label">Weight</label>
-             <div className="col-sm-6">
-             <input type="text" className="form-control" name="weight" value={weight} onChange={setWeight} placeholder="kg" id="input4"/>
-             { (weight < 0 || isNaN(weight)) && <p className="error" >Please enter a positive value</p> }
+            <div className="form-group row">
+              <label htmlFor="input4" className="col-sm-2 col-form-label">Weight</label>
+              <div className="col-sm-6">
+                <input type="text" className="form-control" name="weight" value={weight} onChange={setWeight} placeholder="kg" id="input4" />
+                {(weight < 0 || isNaN(weight)) && <p className="error" >Please enter a positive value</p>}
+              </div>
             </div>
-           </div>
-          
-           <button className="button mb-3">Calculat</button>
-           </form>
-           {
-            result > 0 &&(
-           <div className="result">
-           <ul className="list-group ml-2">
-             <li className="list-group-item"> <span> <strong>BMI =</strong> </span> {`${result.toPrecision(3)} kg/m^2 `}</li>
-           </ul>	
-           </div>
+
+            <button className="button mb-3">Calculat</button>
+          </form>
+          {
+            result > 0 && (
+              <div className="result">
+                <ul className="list-group ml-2">
+                  <li className="list-group-item"> <span> <strong>BMI =</strong> </span> {`${result.toPrecision(3)} kg/m^2 `}</li>
+                </ul>
+              </div>
             )}
         </div>
-        </div>
-        </>
-    );
+      </div>
+    </>
+  );
 };
 
 export default BmiCalculator;
