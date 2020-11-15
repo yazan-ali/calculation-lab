@@ -16,10 +16,6 @@
     justify-content: center;
 }
 
-.menu{
-    /* margin: auto; */
-}
-
 .main ul li{
     display: inline-block;
     margin-top: 30px;
@@ -79,6 +75,22 @@
 }
 
 .math:hover  li{
+    background:  #5A096A;
+    opacity: 1;
+}
+
+.other{
+    height: 80vh;
+    background-image: url(https://images.unsplash.com/photo-1561112079-2c3226d9c559?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+.other:hover{
+    filter: grayscale(50%);
+}
+
+.other:hover  li{
     background:  #5A096A;
     opacity: 1;
 }
