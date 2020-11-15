@@ -64,7 +64,7 @@
 }
 
 .math{
-    height: 80vh;
+    height: 50vh;
     background-image: url(https://images.unsplash.com/photo-1582572186057-0e74d3c715ea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1782&q=80);
     background-position: center;
     background-size: cover;
@@ -80,7 +80,7 @@
 }
 
 .other{
-    height: 80vh;
+    height: 50vh;
     background-image: url(https://images.unsplash.com/photo-1561112079-2c3226d9c559?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80);
     background-position: center;
     background-size: cover;
@@ -100,8 +100,4 @@
     position: relative;
     top: 320px;
     font-size: 25px;
-}
-
-.wave{
-    width: 100vw;
 }

@@ -219,6 +219,7 @@
   }
   .counters{
       justify-content: space-around;
+      padding: 0 50px;
   }
   .counters span{
     font-size: 1rem;
