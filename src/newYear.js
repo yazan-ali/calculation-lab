@@ -9,7 +9,7 @@ function NewYear() {
     const [mins, setMins] = useState("");
     const [seconds, setSeconds] = useState("");
 
-    const newYear = '1 Jan 2021';
+    const newYear = `1 Jan ${new Date().getFullYear() + 1}`
 
     function countdown() {
         const newYearDate = new Date(newYear);
