@@ -45,6 +45,7 @@ function CaloriesCalculator() {
       <Navbar />
       <div className="root">
         <h1 className="mb-4">Calorie Calculator</h1>
+        <p style={{ fontSize: 18, width: "74%" }}>The Calorie Calculator can be used to estimate the number of calories a person needs to consume each day. This calculator can also provide some simple guidelines for gaining or losing weight.</p>
         <div className="jumbotron">
           <form onSubmit={getResult}>
 
@@ -115,6 +116,27 @@ function CaloriesCalculator() {
               </div>
             )}
         </div>
+        <p style={{ fontSize: 18, width: "74%" }}>
+          This Calorie Calculator is based on several equations, and the results of the calculator are based on an estimated average. The Harris-Benedict Equation was one of the earliest equations used to calculate basal metabolic rate (BMR), which is the amount of energy expended per day at rest. It was revised in 1984 to be more accurate and was used up until 1990, when the Mifflin-St Jeor Equation was introduced. The Mifflin-St Jeor Equation also calculates BMR, and has been shown to be more accurate than the revised Harris-Benedict Equation. The Katch-McArdle Formula is slightly different in that it calculates resting daily energy expenditure (RDEE), which takes lean body mass into account, something that neither the Mifflin-St Jeor nor the Harris-Benedict Equation do. Of these equations, the Mifflin-St Jeor Equation is considered the most accurate equation for calculating BMR with the exception that the Katch-McArdle Formula can be more accurate for people who are leaner and know their body fat percentage. The three equations used by the calculator are listed below:
+        </p>
+
+        <h4>Mifflin-St Jeor Equation:</h4>
+        <p style={{ fontSize: 16.5, width: "74%" }}>For men: BMR = 10W + 6.25H - 5A + 5</p>
+        <p style={{ fontSize: 16.5, width: "74%" }}>For women: BMR = 10W + 6.25H - 5A - 161</p>
+
+        <h4>Revised Harris-Benedict Equation:</h4>
+        <p style={{ fontSize: 16.5, width: "74%" }}>For men: BMR = 13.397W + 4.799H - 5.677A + 88.362</p>
+        <p style={{ fontSize: 16.5, width: "74%" }}>For women: BMR = 9.247W + 3.098H - 4.330A + 447.593</p>
+
+        <h4>Katch-McArdle Formula:</h4>
+        <p style={{ fontSize: 16.5, width: "74%" }}>BMR = 370 + 21.6(1 - F)W</p>
+        <span>Where:</span>
+        <ul>
+          <li style={{ fontSize: 18.5 }}>W is body weight in kg</li>
+          <li style={{ fontSize: 18.5 }}>H is body height in cm</li>
+          <li style={{ fontSize: 18.5 }}>A is age</li>
+          <li style={{ fontSize: 18.5 }}>F is body fat in percentage</li>
+        </ul>
       </div>
     </>
   );

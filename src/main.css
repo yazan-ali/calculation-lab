@@ -151,6 +151,21 @@
     text-align: center;
 }
 
+.bmi-tabel table{
+    margin-left:120px; 	
+}
+.bmi-tabel th{
+    padding: 10px;
+    background-color: #5A096A;
+    color: #fff;
+}
+.bmi-tabel tr:nth-child(2n){
+    background:#E8E8E8;	
+}
+.bmi-tabel .td{
+    padding-left:5px; 	
+}
+
 @media (min-width: 1200px) {
     .root{
         margin: 50px 100px;
